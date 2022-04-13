@@ -9,6 +9,6 @@ Mise en place de l'architecture MVC en PHP,couplé avec L'ORM Doctrine(CRUD).<br
 ###execute la commande: vendor/bin/doctrine orm:schema-tool:create ou vendor/bin/doctrine orm:schema-tool:update --force <br />
 ###Pour plus d'information sur ODM doctrine, consulter ce lien: https://www.doctrine-project.org/projects/doctrine-orm/en/current/tutorials/getting-started.html.<br />
 
-##Toute proposition pour, une amelioration est la bienvenu.
+##Toute proposition pour une amelioration est la bienvenu.
 
 
