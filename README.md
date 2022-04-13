@@ -1,5 +1,5 @@
 # mvc_doctrine
-Mise en place de l'architecture MVC en PHP, couple avec CRUD de  L'ORM Doctrine.<br />
+Mise en place de l'architecture MVC en PHP,couplé avec L'ORM Doctrine(CRUD).<br />
 ###Pour commencer veillez execute cette commande: git clone https://github.com/MadiKABA/mvc_doctrine.git, sur votre terminal pour avoir le projet en local.<br />
 ###deplacer le projet dans le dossier htdocs, si vous utiliser xampp, dans www si vous utliser wampp.<br />
 ###Ouvir le proejt avec editeur text ou IDE.<br />
