@@ -20,7 +20,7 @@ $conn = array(
     'driver' => 'pdo_mysql',
     'user' =>'root',
     'password'=>'',
-    'dbname'=>'db_nous_les_femme',
+    'dbname'=>'db_doctrine_mvc',
     'host'=>'127.0.0.1',
 );
 

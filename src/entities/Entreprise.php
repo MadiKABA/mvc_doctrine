@@ -56,6 +56,7 @@
          * Many Entreprise have one Quartier. This is the owning side.
          * @ManyToOne(targetEntity="NombreEmploye", inversedBy="entreprises")
          * @JoinColumn(name="nbre_employe_id", referencedColumnName="id")
+         * @var int 
          */
          
         private $nbre_employe;
@@ -63,18 +64,21 @@
          * Many Entreprise have one Quartier. This is the owning side.
          * @ManyToOne(targetEntity="Quartier", inversedBy="entreprises")
          * @JoinColumn(name="quartier_id", referencedColumnName="id")
+         * @var int 
          */
         private $quartier;
          /**
          * Many Entreprise have one regime_juridique. This is the owning side.
          * @ManyToOne(targetEntity="RegimeJuridique", inversedBy="entreprises")
          * @JoinColumn(name="regime_id", referencedColumnName="id")
+         * @var int 
          */
         private $regime_juridique;
          /**
          * Many Entreprise have one domaine. This is the owning side.
          * @ManyToOne(targetEntity="DomaineActivite", inversedBy="entreprises")
          * @JoinColumn(name="domaine_id", referencedColumnName="id")
+         * @var int 
          */
          
         private $domaine;
@@ -303,6 +307,26 @@
         public function setDispositif_formation($dispositif_formation)
         {
                 $this->dispositif_formation = $dispositif_formation;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of dispositif_formation
+         */ 
+        public function getNbre_employe()
+        {
+                return $this->nbre_employe;
+        }
+
+        /**
+         * Set the value of dispositif_formation
+         *
+         * @return  self
+         */ 
+        public function setNbre_employe($nbre_employe)
+        {
+                $this->nbre_employe = $nbre_employe;
 
                 return $this;
         }

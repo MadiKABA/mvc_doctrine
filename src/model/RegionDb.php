@@ -1,5 +1,6 @@
 <?php
-    class RegionDb
+use libs\system\Model;
+    class RegionDb extends Model
     {
         public function add()
         {
