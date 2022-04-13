@@ -79,9 +79,26 @@
         }
         
         public function delete($id){
-            $proprietaire = $this->entityManager->find("Entreprise",$id);
-            $this->entityManager->remove($proprietaire);
+            $entreprise = $this->entityManager->find("Entreprise",$id);
+            $this->entityManager->remove($entreprise);
             $this->entityManager->flush();
+        }
+
+
+        public function edit($id)
+        {
+            $entreprise = $this->entityManager->getRepository('Entreprise')->find($id);
+            return $entreprise;
+        }
+
+        public function update($entreprise)
+        {
+            $en = $this->entityManager->getRepository('Entreprise')->find($entreprise);
+            if ($en != null) {
+                $this->entityManager->merge($en);
+                $this->entityManager->flush();
+            }
+    
         }
         
     }

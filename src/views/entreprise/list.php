@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 m-auto">
-                <h1 class="my-5 text-center">List Proprietaires</h1>
+                <h1 class="my-5 text-center">List entreprises</h1>
                 <table class="table table-success table-striped fs-4">
                     <thead>
                         <th>Nom</th>
@@ -19,20 +19,20 @@
 
                         <tr class="table-active">
                             <?php
-                                foreach ($data as $proprietaire )
+                                foreach ($data as $entreprise )
                                 {
                                     echo "<tr>";
-                                    echo "<td>" . $proprietaire->getNom(). "</td>";
-                                    echo "<td>" . $proprietaire->getCoordonnee_gps() . "</td>";
-                                    echo "<td>" . $proprietaire->getSiege_social(). "</td>";
-                                    echo "<td>" . $proprietaire->getDate_creation(). "</td>";
-                                    echo "<td>" . $proprietaire->getNimea(). "</td>";
-                                    echo "<td>" . $proprietaire->getPage_web(). "</td>";
+                                    echo "<td>" . $entreprise->getNom(). "</td>";
+                                    echo "<td>" . $entreprise->getCoordonnee_gps() . "</td>";
+                                    echo "<td>" . $entreprise->getSiege_social(). "</td>";
+                                    echo "<td>" . $entreprise->getDate_creation(). "</td>";
+                                    echo "<td>" . $entreprise->getNimea(). "</td>";
+                                    echo "<td>" . $entreprise->getPage_web(). "</td>";
                                     
                                     echo "<td>";
 
-                                    echo '<a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/entreprise/edit ?id='.$proprietaire->getId().'"><button type="button" class="btn btn-warning fs-5 mx-1">edit</button></a>';
-                                    echo '<a href="http://localhost/mesProjest/doctrine-ModuleGproprietaire/entreprise/delete?id='. $proprietaire->getId() .'"><button type="button" class="btn btn-danger fs-5 mx-1">delete</button></a>';
+                                    echo '<a href="http://localhost/nous_les_femme/Entreprise/edit ?id='.$entreprise->getId().'"><button type="button" class="btn btn-warning fs-5 mx-1">edit</button></a>';
+                                    echo '<a href="http://localhost/nous_les_femme/Entreprise/delete?id='. $entreprise->getId() .'"><button type="button" class="btn btn-danger fs-5 mx-1">delete</button></a>';
                                     echo "</td>";
                                     echo "</tr>";
 
